@@ -103,13 +103,13 @@ strong {
 #header nav ul {
   display: flex;
   flex-wrap: wrap;
-  align-content: center;-
-  /*display: grid;
+  align-content: center;
+  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(40vw, 1fr));
-  grid-gap: 1em;*/
+  grid-gap: 1em;
 }
 
-/*@supports (display:flex) {
+@supports (display:flex) {
   #header nav ul {
     display: flex;
     grid-template-columns: repeat(auto-fit, minmax(40vw, 1fr));
@@ -122,7 +122,7 @@ strong {
     grid-template-columns: repeat(auto-fit, minmax(40vw, 1fr));
     grid-gap: 2vw;
   }
-}*/
+}
 
 @media screen and (min-width: 61.875em) {
   #header nav ul {
