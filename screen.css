@@ -73,6 +73,10 @@ a {
   color: #4CBED5;
 }
 
+a:hover {
+  color: #5CE4FF;
+}
+
 figure {
   padding: 3vw 0;
 }
