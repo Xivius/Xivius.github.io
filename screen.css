@@ -241,13 +241,14 @@ strong {
 }
 
 #footer p {
-  font-size: 0.889em;
+  font-size: 1.125em;
   padding-bottom: 0.889em;
 }
 
 #footer cite {
   display: block;
   font-size: 0.624em;
+  margin-top: 1.125em;
 }
 
 .icons {
@@ -255,11 +256,16 @@ strong {
   padding-top: 1vw;
 }
 
+.icons a {
+  visibility: hidden;
+}
+
 .icons img {
   max-width: 6vw;
   max-height: 6vw;
   margin-top: 2vw;
   margin-right: 2vw;
+  visibility: visible;
 }
 
 .facebook-icon img:hover {
@@ -274,4 +280,34 @@ strong {
   background-image: url("assets/instagram-colored.png");
   background-repeat: no-repeat;
   background-size: 6vw;
+}
+
+@media screen and (max-width: 45.796088438374em) {
+  .icons img {
+    max-width: 7vw;
+    max-height: 7vw;
+  }
+
+  .facebook-icon img:hover {
+    background-size: 8vw;
+  }
+
+  .instagram-icon img:hover {
+    background-size: 8vw;
+  }
+}
+
+@media screen and (min-width: 58.342961983134em) {
+  .icons img {
+    max-width: 5vw;
+    max-height: 5vw;
+  }
+
+  .facebook-icon img:hover {
+    background-size: 5vw;
+  }
+
+  .instagram-icon img:hover {
+    background-size: 5vw;
+  }
 }
