@@ -104,13 +104,14 @@ strong {
 }
 
 #header nav {
-  margin: 6vw;
+  margin: 7vw 0vw;
   opacity: 0.825;
 }
 
 #header nav ul li {
   float: left;
   margin: 0 1vw;
+  text-align: center;
 }
 
 #header nav ul {
