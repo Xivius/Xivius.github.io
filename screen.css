@@ -159,58 +159,57 @@ strong {
   margin-top: 5vw;
 }
 
-#weekly-schedule ul.schedule {
+#weekly-schedule .schedule {
   border: 0.175em solid black;
   display: flex;
   display: grid;
   margin-top: 2vw;
 }
 
-#weekly-schedule ul.schedule li {
-  margin-left: 1em;
+#weekly-schedule .schedule li {
+  margin: 1em 0;
 }
 
-#weekly-schedule ul li ul {
+#weekly-schedule .schedule li ul {
   display: block;
-}
-
-#weekly-schedule ul li ul li {
-  padding-bottom: 1.222em;
-}
-
-#weekly-schedule ul li ul {
   list-style-type: circle;
   padding-left: 1.125em;
+}
+
+#weekly-schedule .schedule li ul li {
+  flex-wrap: wrap;
+  padding-bottom: 1.222em;
 }
 
 @supports (display: flex) {
   #weekly-schedule ul {
     overflow: auto;
-  }
-
-  #weekly-schedule ul li ul {
-    list-style-type: none;
     padding-left: 0;
   }
 
-  #weekly-schedule ul li ul li {
-    flex-wrap: wrap;
+  #weekly-schedule .schedule li {
+    padding-left: 0;
+  }
+
+  #weekly-schedule .schedule li ul {
+    list-style-type: none;
+    padding-left: 0;
   }
 }
 
 @supports (display: grid) {
   #weekly-schedule ul {
     grid-template-columns: repeat(7, minmax(15vw, 1fr));
-    grid-gap: 0.5em;
+    grid-gap: 2em;
   }
 
-  #weekly-schedule ul li ul {
-    list-style-type: none;
+  #weekly-schedule .schedule li {
     padding-left: 0;
   }
 
-  #weekly-schedule ul li ul li {
-
+  #weekly-schedule .schedule li ul {
+    list-style-type: none;
+    padding-left: 0;
   }
 }
 
