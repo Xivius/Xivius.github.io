@@ -14,7 +14,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 html {
   background-color: #0081AC;
-  font-family: yantramanav, sarabun, helvetica, arial, sans-serif;
+  font-family: Yantramanav, Sarabun, Helvetica, Arial, Sans-Serif;
   font-size: 1.125em;
   line-height: 1.222em;
   text-rendering: optimizeLegibility;
@@ -127,13 +127,13 @@ strong {
   grid-gap: 6vw 0vw;
 }
 
-@supports (display:flex) {
+@supports (display: flex) {
   #header nav ul li {
     margin: 0;
   }
 }
 
-@supports (display:grid) {
+@supports (display: grid) {
   #header nav ul {
     margin: 0;
   }
