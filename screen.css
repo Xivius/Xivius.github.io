@@ -12,11 +12,10 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
  * #0081AC
  */
 
+/* General CSS */
+
 html {
   background-color: #0081AC;
-  font-family: Yantramanav, Sarabun, Helvetica, Arial, Sans-Serif;
-  font-size: 1.125em;
-  line-height: 1.222em;
   text-rendering: optimizeLegibility;
   -webkit-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
@@ -102,6 +101,8 @@ figcaption {
 strong {
   font-weight: bold;
 }
+
+/* Header CSS */
 
 #header {
   margin-bottom: 10vw;
@@ -217,8 +218,9 @@ strong {
   }
 }
 
-/* Responsive iframe: Google Calendar
-  I use an iframe to embed Google Calendar.
+/* Responsive iframe CSS
+  I nest the Google Calendar iframe inside
+  a div element to make it responsive.
   This is the CSS to make it responsive.
 */
 
@@ -239,6 +241,8 @@ strong {
   }
 }
 */
+
+/* Footer CSS */
 
 #footer {
   padding-top: 7.5vw;
