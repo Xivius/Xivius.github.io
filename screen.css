@@ -113,45 +113,41 @@ strong {
   opacity: 0.825;
 }
 
-#header nav ul li {
-  float: left;
-  margin: 0 1vw;
-  text-align: center;
-}
-
-#header nav ul {
+#header ul {
+  /*align-content: center;
   display: flex;
   flex-wrap: wrap;
-  align-content: center;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25vw, 1fr));
-  grid-gap: 6vw 0vw;
+  grid-template-columns: repeat(auto-fit, 1fr);
+  grid-gap: 1em;*/
 }
 
-@supports (display: flex) {
-  #header nav ul li {
-    margin: 0;
+#header li {
+  display: block;
+  margin-bottom: 1vw;
+}
+
+@media screen and (min-width: 40.500em) {
+  #header li {
+    display: inline-block;
+    margin-right: 2vw;
+    vertical-align: top;
+    width: 20.5vw;
+  }
+
+  #header li:last-child {
+    margin-right: 0;
   }
 }
 
-@supports (display: grid) {
-  #header nav ul {
-    margin: 0;
-  }
-}
-
-@media screen and (min-width: 61.875em) {
-  #header nav ul {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15vw, 1fr));
-    grid-gap: 0vw;
-  }
-}
-
-#header nav a {
+#header a {
   background-color: #4CBED5;
-  border: 0.175em solid black;
+  border-color: black;
+  border-style: solid;
+  border-width: 0.175em;
   color: black;
+  display: block;
+  font-size: 1.125em;
   padding: 2vw;
   text-align: center;
 }
@@ -160,15 +156,32 @@ strong {
   background-color: #5CE4FF;
 }
 
-#weekly-schedule section {
-  margin-top: 5vw;
+/*@supports (display: flex) {
+  #header li {
+    margin: 0;
+  }
 }
+
+@supports (display: grid) {
+  #header ul {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 61.875em) {
+  #header ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15vw, 1fr));
+    grid-gap: 0vw;
+  }
+} */
+
+/* Weekly Schedule CSS */
 
 #weekly-schedule .schedule {
   border: 0.175em solid black;
   display: flex;
   display: grid;
-  margin-top: 2vw;
 }
 
 #weekly-schedule .schedule li {
