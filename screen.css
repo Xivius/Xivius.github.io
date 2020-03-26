@@ -101,22 +101,25 @@ strong {
   font-weight: bold;
 }
 
+
 /* Header CSS */
 
 #header {
-  margin-bottom: 10vw;
+  background-image: url("assets/chicago-iit-cru.png");
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 #header nav {
-  margin: 7vw 0vw;
-  opacity: 0.825;
+  opacity: 0.8;
 }
 
 #header ul {
-  /*align-content: center;
+  align-content: center;
   display: flex;
   flex-wrap: wrap;
-  display: grid;
+  /*display: grid;
   grid-template-columns: repeat(auto-fit, 1fr);
   grid-gap: 1em;*/
 }
@@ -126,16 +129,9 @@ strong {
   margin-bottom: 1vw;
 }
 
-@media screen and (min-width: 40.500em) {
+@supports (display: flex) {
   #header li {
-    display: inline-block;
-    margin-right: 2vw;
-    vertical-align: top;
-    width: 20.5vw;
-  }
-
-  #header li:last-child {
-    margin-right: 0;
+    margin: 0;
   }
 }
 
@@ -147,21 +143,53 @@ strong {
   color: black;
   display: block;
   font-size: 1.125em;
-  padding: 2vw;
+  padding: 4vw;
   text-align: center;
+}
+
+/* Header Media Queries */
+@media screen and (min-width: 28.250em) {
+  #header {
+    padding-bottom: 8.833em;
+  }
+
+  #header li {
+    display: inline-block;
+    margin-right: auto;
+    vertical-align: top;
+    width: 49.5%;
+  }
+
+  #header li:last-child {
+    margin-right: 0;
+  }
+
+  #header a {
+    padding: 3vw;
+  }
+}
+
+@media screen and (min-width: 40.375em) {
+  #header {
+    padding-bottom: 11.986em; /* 3.153 + 8.833 */
+  }
+
+  #header li {
+    width: 24.5%;
+  }
+}
+
+@media screen and (min-width: 59.375em) {
+  #header a {
+    padding: 1.779em;
+  }
 }
 
 #header nav a:hover {
   background-color: #5CE4FF;
 }
 
-/*@supports (display: flex) {
-  #header li {
-    margin: 0;
-  }
-}
-
-@supports (display: grid) {
+/*@supports (display: grid) {
   #header ul {
     margin: 0;
   }
