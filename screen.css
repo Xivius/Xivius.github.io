@@ -115,78 +115,100 @@ strong {
   opacity: 0.8;
 }
 
-#header ul {
-  align-content: center;
-  display: flex;
-  flex-wrap: wrap;
-  /*display: grid;
-  grid-template-columns: repeat(auto-fit, 1fr);
-  grid-gap: 1em;*/
-}
-
 #header li {
-  display: block;
-  margin-bottom: 1vw;
-}
-
-@supports (display: flex) {
-  #header li {
-    margin: 0;
-  }
-}
-
-#header a {
   background-color: #4CBED5;
   border-color: black;
   border-style: solid;
   border-width: 0.175em;
+  margin-bottom: 2vw;
+}
+
+#header a {
+  box-sizing: border-box;
   color: black;
   display: block;
-  font-size: 1.125em;
+  font-size: 1.424em;
+  height: 100%;
   padding: 4vw;
   text-align: center;
+  vertical-align: middle;
+}
+
+#header nav a:hover {
+  background-color: #5CE4FF;
 }
 
 /* Header Media Queries */
-@media screen and (min-width: 28.250em) {
+@media screen and (min-width: 28.313em) { /* 452px */
   #header {
-    padding-bottom: 8.833em;
+    padding-bottom: 9.397em;
+  }
+
+  #header ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /*display: grid;
+    grid-template-columns: repeat(auto-fit, 1fr);
+    grid-gap: 1em;*/
   }
 
   #header li {
+    align-items: center;
     display: inline-block;
+    justify-content: center;
     margin-right: auto;
     vertical-align: top;
-    width: 49.5%;
+    width: 48%;
   }
 
-  #header li:last-child {
+  #header li:nth-child(even) {
     margin-right: 0;
   }
 
   #header a {
     padding: 3vw;
   }
+
+  @supports (display: flex) {
+    #header li {
+      display: list-item;
+    }
+  }
 }
 
-@media screen and (min-width: 40.375em) {
+@media screen and (min-width: 38.813em) { /* 621px */
+  /* Preserve header size as menu changes structure */
   #header {
-    padding-bottom: 11.986em; /* 3.153 + 8.833 */
+    padding-bottom: 13.499em; /* 9.397em + 4.102em */
+  }
+}
+
+@media screen and (min-width: 40.375em) { /* 646px */
+  /* Preserve header size as menu changes structure */
+  #header {
+    padding-bottom: 16.249em; /* 13.499em + 2.750em */
   }
 
   #header li {
-    width: 24.5%;
+    width: 23%;
+  }
+
+  #header li:nth-child(even) {
+    margin-right: auto;
+  }
+
+  #header li:last-child {
+    margin-right: 0;
   }
 }
 
-@media screen and (min-width: 59.375em) {
+@media screen and (min-width: 59.375em) { /* 950px */
+  /* Maximum allowed padding for clickable areas */
   #header a {
-    padding: 1.779em;
+    /* Taking into account the font size of 1.424em */
+    padding: 1.294em; /* 28.4667px = 1.294em */
   }
-}
-
-#header nav a:hover {
-  background-color: #5CE4FF;
 }
 
 /*@supports (display: grid) {
