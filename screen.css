@@ -39,7 +39,8 @@ section {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
   font-family: 'source sans pro', sans-serif, arial;
   font-weight: bold;
   line-height: 1em;
@@ -59,6 +60,10 @@ h3 {
 }
 
 h4 {
+  font-size: 1.802em;
+}
+
+h5 {
   font-size: 1.266em;
 }
 
@@ -120,7 +125,7 @@ strong {
   background-color: #4CBED5;
   border-color: black;
   border-style: solid;
-  border-width: 0.175em;
+  border-width: 0.171em;
   margin-bottom: 2vw;
 }
 
@@ -220,35 +225,61 @@ ul.schedule {
   border-radius: 0.889em;
   border-style: solid;
   border-width: 0.171em;
-  font-size: 1.424em;
+  font-family: 'Open Sans', sans-serif;
   /*display: flex;
+    flex-wrap: wrap;
   display: grid;*/
 }
 
 .day {
-  background-color: white; /* for browsers that don't support rgba() */
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: #F6F6F6; /* for browsers that don't support rgba() */
+  background-color: rgba(246, 246, 246, 0.75);
   border-radius: 0.889em;
   margin: 1em;
-  padding: 0.624em;
+  padding: 2vw 3vw;
 }
 
 .day > h4 {
-  padding-bottom: 0.308em;
+  color: #5368A6; /* Saturated Blue */
+  padding-bottom: 0.135em;
 }
 
-.events {
-  margin-left: 1.125em;
+.event-list {
+  font-size: 0.889em;
+  margin-left: 1.226em;
 }
 
-.events {
-  display: block;
+.event-info {
+  padding: 0;
+}
+
+.event-info > h5 {
+  font-size: 1.602em;
+  padding-bottom: 0.135em;
+}
+
+.event-info > h5.yellow {
+  color: #FEC369; /* orange yellow */
+}
+
+.event-info > h5.pink {
+  color: #FE72C8; /* hot pink */
+}
+
+.event-info > h5.purple {
+  color: #CC71E6; /* light purple */
+}
+
+.event-info > h5.blue {
+  color: #5775FF; /* lighter blue */
+}
+
+.event-list {
   list-style-type: disc;
 }
 
-.events li {
-  flex-wrap: wrap;
-  padding: 0.135em 0;
+.event-list li {
+  padding: 0.152em 0;
 }
 
 /*@supports (display: flex) {
