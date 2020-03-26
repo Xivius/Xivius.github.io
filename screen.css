@@ -59,7 +59,7 @@ h3 {
 }
 
 h4 {
-  font-size: 1.424em;
+  font-size: 1.266em;
 }
 
 p {
@@ -111,11 +111,11 @@ strong {
   background-repeat: no-repeat;
 }
 
-#header nav {
+#navigation {
   opacity: 0.8;
 }
 
-#header li {
+#navigation li {
   background-color: #4CBED5;
   border-color: black;
   border-style: solid;
@@ -123,7 +123,7 @@ strong {
   margin-bottom: 2vw;
 }
 
-#header a {
+#navigation a {
   box-sizing: border-box;
   color: black;
   display: block;
@@ -134,7 +134,7 @@ strong {
   vertical-align: middle;
 }
 
-#header nav a:hover {
+#navigation a:hover {
   background-color: #5CE4FF;
 }
 
@@ -144,7 +144,7 @@ strong {
     padding-bottom: 9.397em;
   }
 
-  #header ul {
+  #navigation ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -153,7 +153,7 @@ strong {
     grid-gap: 1em;*/
   }
 
-  #header li {
+  #navigation li {
     align-items: center;
     display: inline-block;
     justify-content: center;
@@ -162,11 +162,11 @@ strong {
     width: 48%;
   }
 
-  #header li:nth-child(even) {
+  #navigation li:nth-child(even) {
     margin-right: 0;
   }
 
-  #header a {
+  #navigation a {
     padding: 3vw;
   }
 
