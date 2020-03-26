@@ -203,6 +203,7 @@ strong {
   }
 } */
 
+
 /* Weekly Schedule CSS */
 
 #weekly-schedule .schedule {
@@ -223,7 +224,6 @@ strong {
 
 #weekly-schedule .schedule li ul li {
   flex-wrap: wrap;
-  padding-bottom: 1.222em;
 }
 
 @supports (display: flex) {
@@ -258,6 +258,7 @@ strong {
   }
 }
 
+
 /* Responsive iframe CSS
   I nest the Google Calendar iframe inside
   a div element to make it responsive.
@@ -281,6 +282,7 @@ strong {
   }
 }
 */
+
 
 /* Footer CSS */
 
