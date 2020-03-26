@@ -117,6 +117,10 @@ strong {
   background-repeat: no-repeat;
 }
 
+#header h1 {
+  text-align: center;
+}
+
 #navigation {
   opacity: 0.8;
 }
@@ -365,6 +369,7 @@ ul.schedule {
 .icons img {
   background-size: 2.027em;
   background-repeat: no-repeat;
+  border-radius: 0;
 }
 
 .icons img:hover {
