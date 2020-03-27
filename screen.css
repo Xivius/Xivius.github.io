@@ -235,57 +235,57 @@ strong {
 
 .schedule {
   background-color: white; /* for browsers that don't support rgba() */
-  background-color: rgba(246, 246, 246, 0.75);
-  border-radius: 0.702em;
+  background-color: rgba(246, 246, 246, 0.75); /* White Smoke */
+  border-radius: 0.702em; /* 11px */
   font-family: 'Open Sans', sans-serif;
   padding: 2vw;
 }
 
 .day {
   background-color: #F6F6F6; /* for browsers that don't support rgba() */
-  background-color: rgba(246, 246, 246, 0.9);
-  border-radius: 0.702em;
+  background-color: rgba(246, 246, 246, 0.9); /* White Smoke */
+  border-radius: 0.702em; /* 11px */
   margin-bottom: 2vw;
   padding: 2vw;
 }
 
 .day > h4 {
-  color: #5368A6; /* Saturated Blue */
-  padding-bottom: 0.135em;
+  color: #5368A6; /* Close to Blue Yonder */
+  padding-bottom: 0.135em; /* 2px */
 }
 
 .event-list {
   list-style-type: disc;
-  margin-left: 1.125em;
+  margin-left: 1.125em; /* 18px */
 }
 
 .event-item {
-  padding-top: 0.889em;
+  padding-top: 0.889em; /* 14px */
 }
 
 .event-item > h5 {
-  padding-bottom: 0.135em;
+  padding-bottom: 0.135em; /* 2px */
 }
 
 .event-item > h5.yellow {
-  color: #FEC369; /* orange yellow */
+  color: #FEC369; /* Close to Koromiko (orange-yellow) */
 }
 
 .event-item > h5.pink {
-  color: #FE72C8; /* hot pink */
+  color: #FE72C8; /* Close Hot Pink */
 }
 
 .event-item > h5.purple {
-  color: #CC71E6; /* light purple */
+  color: #CC71E6; /* Close to Lilac (shade of purple) */
 }
 
 .event-item > h5.blue {
-  color: #5775FF; /* lighter blue */
+  color: #5775FF; /* Close to Blueberry */
 }
 
 .event-item > p {
   font-size: 0.889em; /* for browsers that don't support rem units */
-  font-size: 1.226rem;
+  font-size: 1.226rem; /* 19px */
   font-weight: bold;
 }
 
@@ -300,8 +300,7 @@ strong {
 
   @supports (display: flex) {
     .day {
-      margin-right: 1em;
-      max-width: 23.026em;
+      margin-right: 1em; /* 16px */
       width: 43.5%;
     }
 
@@ -312,28 +311,18 @@ strong {
 }
 
 @media screen and (min-width: 63.188em) { /* 1011px */
+  /* Establish max padding and margins for values using vw unit */
+  .schedule {
+    padding: 1.264em; /* 20.2167px */
+  }
+
   .day {
+    margin-bottom: 1.264em; /* 20.2167px */
     padding: 1.186em; /* 18.9833px */
   }
 }
 
-/*@supports (display: flex) {
-  #weekly-schedule ul {
-    overflow: auto;
-    padding-left: 0;
-  }
-
-  #weekly-schedule .schedule li {
-    padding-left: 0;
-  }
-
-  #weekly-schedule .schedule li ul {
-    list-style-type: none;
-    padding-left: 0;
-  }
-}
-
-@supports (display: grid) {
+/*@supports (display: grid) {
   #weekly-schedule ul {
     grid-template-columns: repeat(7, minmax(15vw, 1fr));
     grid-gap: 2em;
@@ -382,24 +371,24 @@ strong {
 }
 
 #footer p {
-  font-size: 1.125em;
-  line-height: 1.226em;
-  padding-bottom: 0.889em;
+  font-size: 1.125em; /* 18px */
+  line-height: 1.226em; /* 19px */
+  padding-bottom: 0.889em; /* 14px */
 }
 
 .icons li {
   display: inline-block;
-  margin-right: 1.125em;
+  margin-right: 1.125em; /* 18px */
 }
 
 .icons a {
   display: block;
-  height: 2.027em;
-  width: 2.027em;
+  height: 2.027em; /* 32px */
+  width: 2.027em; /* 32px */
 }
 
 .icons img {
-  background-size: 2.027em;
+  background-size: 2.027em; /* 32px */
   background-repeat: no-repeat;
   border-radius: 0;
 }
