@@ -5,17 +5,12 @@
 a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}html{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
 
 /* Custom CSS Added Here: */
-/* CSS Color Scheme
- * #4CBED5
- * #E98B23
- * #FFC427
- * #0081AC
- */
+
 
 /* General CSS */
 
 html {
-  background-color: #0081AC;
+  background-color: #0081AC; /* A Calm Blue */
   margin: 0 3vw;
   text-rendering: optimizeLegibility;
   -webkit-text-size-adjust: 100%;
@@ -25,72 +20,29 @@ html {
 }
 
 body {
-  font-family: Yantramanav, Sarabun, Helvetica, Arial, Sans-Serif;
+  font-family: 'Yantramanav', 'Sarabun', helvetica, arial, sans-serif;
   margin: 3% auto;
-  max-width: 59.375em;
+  /* Max-width is reached when screen size is 63.188em (1011px) */
+  max-width: 59.375em; /* 950px */
   overflow-wrap: break-word;
   word-wrap: break-word;
 }
 
 section {
-  padding-top: 3.653em;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: 'source sans pro', sans-serif, arial;
-  font-weight: bold;
-  line-height: 1em;
-  padding-bottom: 0.493em;
-}
-
-h1 {
-  font-size: 4.11em;
-}
-
-h2 {
-  font-size: 2.566em;
-}
-
-h3 {
-  font-size: 2.281em;
-}
-
-h4 {
-  font-size: 1.802em;
-}
-
-h5 {
-  font-size: 1.266em;
-}
-
-p {
-  font-size: 1.424em;
-}
-
-a {
-  text-decoration: none;
-  font-weight: bold;
-  color: #4CBED5;
-}
-
-a:hover {
-  color: #5CE4FF;
+  padding-top: 1em; /* 16px */
+  padding-bottom: 3.653em; /* 58px */
 }
 
 figure {
   display: block;
-  margin-bottom: 2.566em;
+  margin-bottom: 2.566em; /* 41px */
 }
 
 img {
-  border-radius: 0.889em;
+  border-radius: 0.702em; /* 11px */
   display: block;
   max-width: 100%;
-  padding-bottom: 0.493em;
+  padding-bottom: 0.493em; /* 7px */
 }
 
 figcaption {
@@ -99,8 +51,53 @@ figcaption {
 
 cite {
   display: block;
-  font-size: 0.624em;
-  margin-top: 1.125em;
+  font-size: 0.624em; /* 9px */
+  margin-top: 1.125em; /* 18px */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Source Sans Pro', sans-serif, arial;
+  font-weight: bold;
+  line-height: 1em; /* 16px */
+  padding-bottom: 0.493em; /* 7px */
+}
+
+h1 {
+  font-size: 4.11em; /* 65px */
+}
+
+h2 {
+  font-size: 2.566em; /* 41px */
+}
+
+h3 {
+  font-size: 2.281em; /* 36px */
+}
+
+h4 {
+  font-size: 1.802em; /* 28px */
+}
+
+h5 {
+  font-size: 1.226em; /* 19px */
+}
+
+p {
+  font-size: 1.424em; /* 22px */
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #4CBED5; /* Close to Sea Serpent */
+}
+
+a:hover {
+  color: #5CE4FF; /* Close to Turquoise Blue */
 }
 
 strong {
@@ -128,8 +125,9 @@ strong {
 #navigation li {
   background-color: #4CBED5;
   border-color: black;
+  border-radius: 0.171em; /* 2px */
   border-style: solid;
-  border-width: 0.171em;
+  border-width: 0.171em; /* 2px */
   margin-bottom: 2vw;
 }
 
@@ -137,7 +135,7 @@ strong {
   box-sizing: border-box;
   color: black;
   display: block;
-  font-size: 1.424em;
+  font-size: 1.424em; /* 22px */
   height: 100%;
   padding: 4vw;
   text-align: center;
@@ -145,28 +143,30 @@ strong {
 }
 
 #navigation a:hover {
-  background-color: #5CE4FF;
+  background-color: #5CE4FF; /* Close to Turquoise Blue */
 }
 
 /* Header Media Queries */
 @media screen and (min-width: 28.313em) { /* 452px */
   #header {
-    padding-bottom: 9.397em;
+    /* Changes in nav bar structure alters the header's height
+       making responsive transition choppy. This CSS preserves
+       the header's height to make the transition less choppy.
+       You will see similar CSS in media queries for other
+       critical screen sizes. */
+    padding-bottom: 9.397em; /* 150px */
   }
 
   #navigation ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    /*display: grid;
-    grid-template-columns: repeat(auto-fit, 1fr);
-    grid-gap: 1em;*/
   }
 
   #navigation li {
-    align-items: center;
     display: inline-block;
     justify-content: center;
+    margin-left: auto;
     margin-right: auto;
     vertical-align: top;
     width: 48%;
@@ -184,20 +184,24 @@ strong {
     #header li {
       display: list-item;
     }
+
+    #navigation li:nth-child(even) {
+      margin-right: auto;
+    }
   }
 }
 
 @media screen and (min-width: 38.813em) { /* 621px */
-  /* Preserve header size as menu changes structure */
   #header {
-    padding-bottom: 13.499em; /* 9.397em + 4.102em */
+    /* 9.397em (previous value) + 4.102em */
+    padding-bottom: 13.499em; /* 215px */
   }
 }
 
 @media screen and (min-width: 40.375em) { /* 646px */
-  /* Preserve header size as menu changes structure */
   #header {
-    padding-bottom: 16.249em; /* 13.499em + 2.750em */
+    /* 13.499em (previous value) + 2.750em */
+    padding-bottom: 16.249em; /* 259px */
   }
 
   #navigation li {
@@ -213,34 +217,36 @@ strong {
   }
 }
 
-@media screen and (min-width: 59.375em) { /* 950px */
+@media screen and (min-width: 63.188em) { /* 1011px */
+  #header {
+    /* 16.249em (previous value) + 2.094em */
+    padding-bottom: 18.343em; /* 293px */
+  }
+
   /* Maximum allowed padding for clickable areas */
   #navigation a {
     /* Taking into account the font size of 1.424em */
-    padding: 1.294em; /* 28.4667px = 1.294em */
+    padding: 1.294em; /* 28.4667px */
   }
 }
 
 
 /* Weekly Schedule CSS */
 
-ul.schedule {
-  border-color: black;
-  border-radius: 0.889em;
-  border-style: solid;
-  border-width: 0.171em;
+.schedule {
+  background-color: white; /* for browsers that don't support rgba() */
+  background-color: rgba(246, 246, 246, 0.75);
+  border-radius: 0.702em;
   font-family: 'Open Sans', sans-serif;
-  /*display: flex;
-    flex-wrap: wrap;
-  display: grid;*/
+  padding: 2vw;
 }
 
 .day {
   background-color: #F6F6F6; /* for browsers that don't support rgba() */
-  background-color: rgba(246, 246, 246, 0.75);
-  border-radius: 0.889em;
-  margin: 1em;
-  padding: 2vw 3vw;
+  background-color: rgba(246, 246, 246, 0.9);
+  border-radius: 0.702em;
+  margin-bottom: 2vw;
+  padding: 2vw;
 }
 
 .day > h4 {
@@ -249,41 +255,66 @@ ul.schedule {
 }
 
 .event-list {
-  font-size: 0.889em;
-  margin-left: 1.226em;
+  list-style-type: disc;
+  margin-left: 1.125em;
 }
 
-.event-info {
-  padding: 0;
+.event-item {
+  padding-top: 0.889em;
 }
 
-.event-info > h5 {
-  font-size: 1.602em;
+.event-item > h5 {
   padding-bottom: 0.135em;
 }
 
-.event-info > h5.yellow {
+.event-item > h5.yellow {
   color: #FEC369; /* orange yellow */
 }
 
-.event-info > h5.pink {
+.event-item > h5.pink {
   color: #FE72C8; /* hot pink */
 }
 
-.event-info > h5.purple {
+.event-item > h5.purple {
   color: #CC71E6; /* light purple */
 }
 
-.event-info > h5.blue {
+.event-item > h5.blue {
   color: #5775FF; /* lighter blue */
 }
 
-.event-list {
-  list-style-type: disc;
+.event-item > p {
+  font-size: 0.889em; /* for browsers that don't support rem units */
+  font-size: 1.226rem;
+  font-weight: bold;
 }
 
-.event-list li {
-  padding: 0.152em 0;
+/* Weekly Schedule Media Queries */
+@media screen and (min-width: 40.375em) { /* 646px */
+  .schedule {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /*display: grid;*/
+  }
+
+  @supports (display: flex) {
+    .day {
+      margin-right: 1em;
+      max-width: 23.026em;
+      width: 43.5%;
+    }
+
+    .day:nth-child(even) {
+      margin-right: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 63.188em) { /* 1011px */
+  .day {
+    padding: 1.186em; /* 18.9833px */
+  }
 }
 
 /*@supports (display: flex) {
@@ -315,6 +346,10 @@ ul.schedule {
   #weekly-schedule .schedule li ul {
     list-style-type: none;
     padding-left: 0;
+
+    #weekly-schedule ul li ul {
+      list-style: none;
+    }
   }
 }*/
 
@@ -326,22 +361,14 @@ ul.schedule {
 */
 
 .responsive-calendar {
+  height: 43.3391828275em; /* 693px */
   max-width: 100%;
-  height: 40em;
 }
 
 .responsive-calendar iframe {
   width: 100%;
   height: 100%;
 }
-
-/*
-@supports (display: grid) {
-  #weekly-schedule ul li ul {
-    list-style: none;
-  }
-}
-*/
 
 
 /* Footer CSS */
@@ -350,8 +377,13 @@ ul.schedule {
   padding-top: 7.5vw;
 }
 
+#footer section {
+  padding-bottom: 0;
+}
+
 #footer p {
   font-size: 1.125em;
+  line-height: 1.226em;
   padding-bottom: 0.889em;
 }
 
