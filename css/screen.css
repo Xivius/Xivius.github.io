@@ -116,7 +116,7 @@ strong {
 /* Header CSS */
 
 #header {
-  background-image: url("assets/chicago-iit-cru.png");
+  background-image: url("../media/img/chicago-iit-cru.png");
   background-position: bottom;
   background-size: contain;
   background-repeat: no-repeat;
@@ -366,10 +366,10 @@ strong {
   opacity: 1;
 }
 
-.icons img[src="assets/facebook-uncolored.png"]:hover {
-  background-image: url("assets/facebook-colored.png");
+.icons img[src="media/img/facebook-uncolored.png"]:hover {
+  background-image: url("../media/img/facebook-colored.png");
 }
 
-.icons img[src="assets/instagram-uncolored.png"]:hover {
-  background-image: url("assets/instagram-colored.png");
+.icons img[src="media/img/instagram-uncolored.png"]:hover {
+  background-image: url("../media/img/instagram-colored.png");
 }
