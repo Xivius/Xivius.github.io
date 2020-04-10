@@ -112,6 +112,7 @@ strong {
   background-position: bottom;
   background-size: contain;
   background-repeat: no-repeat;
+  padding-bottom: 10vw;
 }
 
 #header h1 {
@@ -149,12 +150,8 @@ strong {
 /* Header Media Queries */
 @media screen and (min-width: 28.313em) { /* 452px */
   #header {
-    /* Changes in nav bar structure alters the header's height
-       making responsive transition choppy. This CSS preserves
-       the header's height to make the transition less choppy.
-       You will see similar CSS in media queries for other
-       critical screen sizes. */
-    padding-bottom: 9.397em; /* 150px */
+    height: 31.393em;
+    padding-bottom: 0;
   }
 
   #navigation ul {
@@ -191,19 +188,7 @@ strong {
   }
 }
 
-@media screen and (min-width: 38.813em) { /* 621px */
-  #header {
-    /* 9.397em (previous value) + 4.102em */
-    padding-bottom: 13.499em; /* 215px */
-  }
-}
-
 @media screen and (min-width: 40.375em) { /* 646px */
-  #header {
-    /* 13.499em (previous value) + 2.750em */
-    padding-bottom: 16.249em; /* 259px */
-  }
-
   #navigation li {
     width: 23%;
   }
@@ -218,15 +203,10 @@ strong {
 }
 
 @media screen and (min-width: 63.188em) { /* 1011px */
-  #header {
-    /* 16.249em (previous value) + 2.094em */
-    padding-bottom: 18.343em; /* 293px */
-  }
-
   /* Maximum allowed padding for clickable areas */
   #navigation a {
-    /* Taking into account the font size of 1.424em */
-    padding: 1.294em; /* 28.4667px */
+    padding: 1.424rem; /* 28.4667px */
+    padding: 1.294em; /* for browsers that don't support rem units */
   }
 }
 
