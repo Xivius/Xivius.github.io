@@ -11,7 +11,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 html {
   background-color: #0081AC; /* A Calm Blue */
-  margin: 0 3vw;
+  margin: 3vw;
   text-rendering: optimizeLegibility;
   -webkit-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
@@ -21,7 +21,7 @@ html {
 
 body {
   font-family: 'Yantramanav', 'Sarabun', helvetica, arial, sans-serif;
-  margin: 3% auto;
+  margin: 0 auto; /* Center Content */
   /* Max-width is reached when screen size is 63.188em (1011px) */
   max-width: 59.375em; /* 950px */
   overflow-wrap: break-word;
@@ -102,6 +102,13 @@ a:hover {
 
 strong {
   font-weight: bold;
+}
+
+@media screen and (min-width: 63.188em) { /* 1011px */
+  /* Maximum allowed margins */
+  html {
+    margin: 1.896em;
+  }
 }
 
 
