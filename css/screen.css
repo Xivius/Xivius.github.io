@@ -22,12 +22,13 @@ body {
   color: #DDDDDD; /* Off White */
   font-family: 'Yantramanav', 'Sarabun', helvetica, arial, sans-serif;
   overflow-wrap: break-word;
+  position: absolute;
   word-wrap: break-word;
 }
 
 header,
 main {
-  margin: 0 auto; /* Center Content */
+  margin: 0 3vw;
   /* Max-width is reached when screen size is 63.188em (1011px) */
   max-width: 59.375em; /* 950px */
 }
@@ -113,6 +114,11 @@ strong {
 }
 
 @media screen and (min-width: 63.188em) { /* 1011px */
+  header,
+  main {
+    margin: 0 auto;
+  }
+
   /* Maximum allowed margins */
   header {
     margin-top: 1.896em;
@@ -352,6 +358,7 @@ strong {
   margin-top: .75vw;
   padding: 3.653em 0; /* 58px */
   position: sticky;
+  width: 100vw;
 }
 
 #footer section {
