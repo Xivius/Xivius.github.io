@@ -407,3 +407,9 @@ strong {
 .icons img[src="../media/img/spotify-uncolored.png"]:hover {
   background-image: url("../media/img/spotify-colored.png");
 }
+
+@media screen and (min-width: 63.188em) { /* 1011px */
+  #footer section {
+    display: fixed;
+  }
+}
