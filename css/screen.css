@@ -340,10 +340,15 @@ strong {
 /* Footer CSS */
 
 #footer {
-  padding-top: 7.5vw;
+  background-color: #DDDDDD; /* Off White */
+  color: #0081AC; /* A Calm Blue */
+  margin-top: .75vw;
+  padding: 3.653em 0; /* 58px */
+  position: sticky;
 }
 
 #footer section {
+  margin-left: 3vw;
   padding-bottom: 0;
 }
 
@@ -382,4 +387,9 @@ strong {
 .icons img[src="./media/img/instagram-uncolored.png"]:hover,
 .icons img[src="../media/img/instagram-uncolored.png"]:hover {
   background-image: url("../media/img/instagram-colored.png");
+}
+
+.icons img[src="./media/img/spotify-uncolored.png"]:hover,
+.icons img[src="../media/img/spotify-uncolored.png"]:hover {
+  background-image: url("../media/img/spotify-colored.png");
 }
