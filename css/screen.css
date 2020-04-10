@@ -20,6 +20,7 @@ html {
 }
 
 body {
+  color: #DDDDDD; /* Off White */
   font-family: 'Yantramanav', 'Sarabun', helvetica, arial, sans-serif;
   margin: 0 auto; /* Center Content */
   /* Max-width is reached when screen size is 63.188em (1011px) */
@@ -225,6 +226,7 @@ strong {
   background-color: white; /* for browsers that don't support rgba() */
   background-color: rgba(246, 246, 246, 0.75); /* White Smoke */
   border-radius: 0.702em; /* 11px */
+  color: black;
   font-family: 'Open Sans', sans-serif;
   padding: 2vw;
 }
