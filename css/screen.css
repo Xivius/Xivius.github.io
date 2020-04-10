@@ -11,7 +11,6 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 html {
   background-color: #0081AC; /* A Calm Blue */
-  margin: 3vw;
   text-rendering: optimizeLegibility;
   -webkit-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
@@ -22,11 +21,19 @@ html {
 body {
   color: #DDDDDD; /* Off White */
   font-family: 'Yantramanav', 'Sarabun', helvetica, arial, sans-serif;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+header,
+main {
   margin: 0 auto; /* Center Content */
   /* Max-width is reached when screen size is 63.188em (1011px) */
   max-width: 59.375em; /* 950px */
-  overflow-wrap: break-word;
-  word-wrap: break-word;
+}
+
+header {
+  margin-top: 3vw;
 }
 
 section {
@@ -107,8 +114,8 @@ strong {
 
 @media screen and (min-width: 63.188em) { /* 1011px */
   /* Maximum allowed margins */
-  html {
-    margin: 1.896em;
+  header {
+    margin-top: 1.896em;
   }
 }
 
@@ -174,7 +181,7 @@ strong {
   #navigation ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
   }
 
   #navigation li {
