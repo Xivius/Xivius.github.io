@@ -149,6 +149,7 @@ strong {
 
 /* Header Media Queries */
 @media screen and (min-width: 28.313em) { /* 452px */
+  /* Set header to constant height to make responsive shift smoother */
   #header {
     height: 31.393em;
     padding-bottom: 0;
