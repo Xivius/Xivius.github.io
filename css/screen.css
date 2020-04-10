@@ -155,6 +155,10 @@ strong {
   background-color: #5CE4FF; /* Close to Turquoise Blue */
 }
 
+#navigation a.current-page {
+  color: #DDDDDD;
+}
+
 /* Header Media Queries */
 @media screen and (min-width: 28.313em) { /* 452px */
   /* Set header to constant height to make responsive shift smoother */
@@ -366,12 +370,10 @@ strong {
   opacity: 1;
 }
 
-.icons img[src="media/img/facebook-uncolored.png"]:hover,
-.icons img[src="../media/img/facebook-uncolored.png"]:hover {
-  background-image: url("../media/img/facebook-colored.png");
+.icons img[src="/media/img/facebook-uncolored.png"]:hover {
+  background-image: url("/media/img/facebook-colored.png");
 }
 
-.icons img[src="media/img/instagram-uncolored.png"]:hover,
-.icons img[src="../media/img/instagram-uncolored.png"]:hover {
-  background-image: url("../media/img/instagram-colored.png");
+.icons img[src="/media/img/instagram-uncolored.png"]:hover {
+  background-image: url("/media/img/instagram-colored.png");
 }
