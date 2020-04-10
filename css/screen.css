@@ -366,10 +366,12 @@ strong {
   opacity: 1;
 }
 
-.icons img[src="media/img/facebook-uncolored.png"]:hover {
+.icons img[src="media/img/facebook-uncolored.png"]:hover,
+.icons img[src="../media/img/facebook-uncolored.png"]:hover {
   background-image: url("../media/img/facebook-colored.png");
 }
 
-.icons img[src="media/img/instagram-uncolored.png"]:hover {
+.icons img[src="media/img/instagram-uncolored.png"]:hover,
+.icons img[src="../media/img/instagram-uncolored.png"]:hover {
   background-image: url("../media/img/instagram-colored.png");
 }
