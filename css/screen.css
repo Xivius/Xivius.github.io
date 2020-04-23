@@ -11,6 +11,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 html {
   background-color: #0081AC; /* A Calm Blue */
+  line-height: 175%;
   text-rendering: optimizeLegibility;
   -webkit-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
@@ -31,7 +32,8 @@ header,
 main {
   margin: 0 auto;
   /* Max-width is reached when screen size is 63.188em (1011px) */
-  max-width: 59.375em; /* 950px */
+  max-width: 52.778em; /* for browsers that don't support rem units */
+  max-width: 59.375rem; /* 950px */
   width: 94vw;
 }
 
@@ -116,13 +118,13 @@ strong {
 }
 
 @media screen and (min-width: 28.313em) { /* 452px */
-  html { /* Gradually increase font size between this screen range */
+  body { /* Gradually increase font size between this screen range */
     font-size: 3.55vw;
   }
 }
 
 @media screen and (min-width: 31.750em) { /* 508px */
-  html {
+  body {
     font-size: 1.125em; /* 18px */
   }
 }
@@ -178,7 +180,7 @@ strong {
 }
 
 #navigation a.current-page {
-  color: #DDDDDD;
+  color: #DDDDDD; /* Light Gray */
 }
 
 #navigation a.current-page:hover {
@@ -244,8 +246,8 @@ strong {
 @media screen and (min-width: 63.188em) { /* 1011px */
   /* Maximum allowed padding for clickable areas */
   #navigation a {
-    padding: 1.424rem; /* 28.4667px */
     padding: 1.294em; /* for browsers that don't support rem units */
+    padding: 1.424rem; /* 28.4667px */
   }
 }
 
