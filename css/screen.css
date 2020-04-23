@@ -397,17 +397,17 @@ strong {
 
 .icons img[src="./media/img/facebook-uncolored.png"]:hover,
 .icons img[src="../media/img/facebook-uncolored.png"]:hover {
-  background-image: url("../media/img/facebook-colored.png");
+  background-image: url("https://xivius.github.io/iit-cru-website/media/img/media/img/facebook-colored.png");
 }
 
 .icons img[src="./media/img/instagram-uncolored.png"]:hover,
 .icons img[src="../media/img/instagram-uncolored.png"]:hover {
-  background-image: url("../media/img/instagram-colored.png");
+  background-image: url("https://xivius.github.io/iit-cru-website/media/img/media/img/instagram-colored.png");
 }
 
 .icons img[src="./media/img/spotify-uncolored.png"]:hover,
 .icons img[src="../media/img/spotify-uncolored.png"]:hover {
-  background-image: url("../media/img/spotify-colored.png");
+  background-image: url("https://xivius.github.io/iit-cru-website/media/img/media/img/spotify-colored.png");
 }
 
 @media screen and (min-width: 63.188em) { /* 1011px */
