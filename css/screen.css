@@ -387,17 +387,19 @@ strong {
 /* Footer CSS */
 
 #footer {
-  background-color: #DDDDDD; /* Off White */
-  color: #0081AC; /* A Calm Blue */
+  background-color: #EBEBEB; /* Off White */
+  color: #00719C; /* A Calm Blue */
   margin-top: .75vw;
-  padding: 3.653em 0; /* 58px */
+  padding-top: 3.653em; /* 58px */
+  padding-bottom: 0.889em; /* 14px */
   position: sticky;
   width: 100%;
 }
 
 #footer section {
   margin-left: 3vw;
-  max-width: 59.375em; /* 950px */
+  max-width: 52.778em; /* for browsers that don't support rem units */
+  max-width: 59.375rem; /* 950px */
   padding-bottom: 0;
 }
 
@@ -409,11 +411,11 @@ strong {
 
 .icons li {
   display: inline-block;
-  margin-right: 1.125em; /* 18px */
+  margin-right: 1em;
 }
 
 .icons a {
-  display: block;
+  display: inline-block;
   height: 2.027em; /* 32px */
   width: 2.027em; /* 32px */
 }
@@ -422,6 +424,7 @@ strong {
   background-size: 2.027em; /* 32px */
   background-repeat: no-repeat;
   border-radius: 0;
+  padding: 0;
 }
 
 .icons img:hover {
@@ -446,7 +449,14 @@ strong {
   background-image: url("../media/img/spotify-colored.png");
 }
 
-@media screen and (min-width: 63.188em) { /* 1011px */
+@media screen and (min-width: 13rem) { /* 208px */
+  .icons li {
+    margin-left: 1.55em; /* 52px */
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 63.188rem) { /* 1011px */
   #footer section {
     margin-left: auto;
     margin-right: auto;
