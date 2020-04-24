@@ -10,7 +10,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* General CSS */
 
 html {
-  background-color: #0081AC; /* A Calm Blue */
+  background-color: #00719C; /* A Calm Blue */
   line-height: 175%;
   text-rendering: optimizeLegibility;
   -webkit-text-size-adjust: 100%;
@@ -64,7 +64,7 @@ figcaption {
 
 cite {
   display: block;
-  font-size: 0.688em; /* 10px */
+  font-size: 0.750em; /* 12px */
   margin-top: 1.125em; /* 18px */
 }
 
@@ -117,22 +117,22 @@ strong {
   font-weight: bold;
 }
 
-@media screen and (min-width: 28.313em) { /* 452px */
+@media screen and (min-width: 28.313rem) { /* 452px */
   body { /* Gradually increase font size between this screen range */
     font-size: 3.55vw;
   }
 }
 
-@media screen and (min-width: 31.750em) { /* 508px */
+@media screen and (min-width: 31.750rem) { /* 508px */
   body {
-    font-size: 1.125em; /* 18px */
+    font-size: 1.125rem; /* 18px */
   }
 }
 
-@media screen and (min-width: 63.188em) { /* 1011px */
+@media screen and (min-width: 63.188rem) { /* 1011px */
   /* Maximum allowed margins */
   header {
-    margin-top: 1.896em;
+    margin-top: 1.896rem;
   }
 }
 
@@ -188,7 +188,7 @@ strong {
 }
 
 /* Header Media Queries */
-@media screen and (min-width: 28.313em) { /* 452px */
+@media screen and (min-width: 28.313rem) { /* 452px */
   /* Set header to constant height to make responsive shift smoother */
   #header {
     height: 31.393em;
@@ -241,7 +241,7 @@ strong {
   }
 }
 
-@media screen and (min-width: 40.375em) { /* 646px */
+@media screen and (min-width: 40.375rem) { /* 646px */
   #navigation ul {
     grid-template-columns: repeat(auto-fit, 23.3333333333333%);
   }
@@ -266,10 +266,9 @@ strong {
   }
 }
 
-@media screen and (min-width: 63.188em) { /* 1011px */
+@media screen and (min-width: 63.188rem) { /* 1011px */
   /* Maximum allowed padding for clickable areas */
   #navigation a {
-    padding: 1.294em; /* for browsers that don't support rem units */
     padding: 1.424rem; /* 28.4667px */
   }
 }
@@ -335,7 +334,7 @@ strong {
 }
 
 /* Weekly Schedule Media Queries */
-@media screen and (min-width: 40.375em) { /* 646px */
+@media screen and (min-width: 40.375rem) { /* 646px */
   .schedule {
     display: flex;
     flex-wrap: wrap;
@@ -354,15 +353,15 @@ strong {
   }
 }
 
-@media screen and (min-width: 63.188em) { /* 1011px */
+@media screen and (min-width: 63.188rem) { /* 1011px */
   /* Establish max padding and margins for values using vw unit */
   .schedule {
-    padding: 1.264em; /* 20.2167px */
+    padding: 1.264rem; /* 20.2167px */
   }
 
   .day {
-    margin-bottom: 1.264em; /* 20.2167px */
-    padding: 1.186em; /* 18.9833px */
+    margin-bottom: 1.264rem; /* 20.2167px */
+    padding: 1.186rem; /* 18.9833px */
   }
 }
 
@@ -451,7 +450,7 @@ strong {
 
 @media screen and (min-width: 13rem) { /* 208px */
   .icons li {
-    margin-left: 1.55em; /* 52px */
+    margin-left: 1.55rem; /* 24px */
     margin-right: 0;
   }
 }
