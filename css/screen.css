@@ -337,7 +337,10 @@ strong {
 @media screen and (min-width: 40.375rem) { /* 646px */
   .schedule {
     display: flex;
+    display: grid;
     flex-wrap: wrap;
+    grid-gap: 1em;
+    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
   }
 
@@ -345,6 +348,18 @@ strong {
     .day {
       margin-right: 1em; /* 16px */
       width: 43.5%;
+    }
+
+    .day:nth-child(even) {
+      margin-right: 0;
+    }
+  }
+
+  @supports (display: grid) {
+    .day {
+      margin-bottom: 0;
+      margin-right: 0;
+      width: auto;
     }
 
     .day:nth-child(even) {
@@ -362,6 +377,12 @@ strong {
   .day {
     margin-bottom: 1.264rem; /* 20.2167px */
     padding: 1.186rem; /* 18.9833px */
+  }
+
+  @supports (display: grid) {
+    .day {
+      margin: 0;
+    }
   }
 }
 
