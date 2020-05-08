@@ -404,6 +404,17 @@ strong {
 }
 
 
+/* Contact Us */
+
+#student-leadership h3 {
+  font-size: 1.802em; /* 28px */
+}
+
+#student-leadership ul li {
+  font-size: 1.424em; /* 20px */
+}
+
+
 /* Footer CSS */
 
 #footer {
