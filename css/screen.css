@@ -420,12 +420,12 @@ strong {
 
 /* Weekly Schedule Media Queries */
 @media screen and (min-width: 40.375rem) { /* 646px */
-  .schedule {
+  .week {
     display: flex;
     display: grid;
     flex-wrap: wrap;
     grid-gap: 1em;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     justify-content: center;
   }
 
@@ -455,7 +455,7 @@ strong {
 
 @media screen and (min-width: 63.188rem) { /* 1011px */
   /* Establish max padding and margins for values using vw unit */
-  .schedule {
+  .week {
     padding: 1.264rem; /* 20.2167px */
   }
 
