@@ -489,91 +489,50 @@ strong {
 
 
 /* Contact Us */
-
-#student-leadership h3 {
+#contact-us h3 {
   font-size: 1.802em; /* 28px */
+}
+
+#student-leadership p {
+  line-height: 130%;
 }
 
 #student-leadership ul li {
   font-size: 1.424em; /* 20px */
+  line-height: 130%;
 }
 
-
-/* Footer CSS */
-
-#footer {
-  background-color: #EBEBEB; /* Off White */
-  color: #00719C; /* A Calm Blue */
-  margin-top: .75vw;
-  padding-top: 3.653em; /* 58px */
-  padding-bottom: 0.889em; /* 14px */
-  position: sticky;
-  width: 100%;
-}
-
-#footer section {
-  margin-left: 3vw;
-  max-width: 52.778em; /* for browsers that don't support rem units */
-  max-width: 59.375rem; /* 950px */
-  padding-bottom: 0;
-}
-
-#footer p {
-  font-size: 1.125em; /* 18px */
-  line-height: 1.226em; /* 19px */
-  padding-bottom: 0.889em; /* 14px */
-}
-
-.icons li {
-  display: inline-block;
-  margin-right: 1em;
-}
-
-.icons a {
-  display: inline-block;
-  height: 2.027em; /* 32px */
-  width: 2.027em; /* 32px */
-}
-
-.icons img {
-  background-size: 2.027em; /* 32px */
-  background-repeat: no-repeat;
-  border-radius: 0;
-  padding: 0;
-}
-
-.icons img:hover {
-  opacity: 1;
-}
-
-.icons img[src="https://xivius.github.io/iit-cru-website/media/img/facebook-uncolored.png"]:hover,
-.icons img[src="./media/img/facebook-uncolored.png"]:hover,
-.icons img[src="../media/img/facebook-uncolored.png"]:hover {
-  background-image: url("../media/img/facebook-colored.png");
-}
-
-.icons img[src="https://xivius.github.io/iit-cru-website/media/img/instagram-uncolored.png"]:hover,
-.icons img[src="./media/img/instagram-uncolored.png"]:hover,
-.icons img[src="../media/img/instagram-uncolored.png"]:hover {
-  background-image: url("../media/img/instagram-colored.png");
-}
-
-.icons img[src="https://xivius.github.io/iit-cru-website/media/img/spotify-uncolored.png"]:hover,
-.icons img[src="./media/img/spotify-uncolored.png"]:hover,
-.icons img[src="../media/img/spotify-uncolored.png"]:hover {
-  background-image: url("../media/img/spotify-colored.png");
-}
-
-@media screen and (min-width: 13rem) { /* 208px */
-  .icons li {
-    margin-left: 1.55rem; /* 24px */
-    margin-right: 0;
+/* Contact Us Media Queries */
+@media screen and (min-width: 40.375rem) { /* 646px */
+  #contact-us article {
+    display: flex;
+    display: grid;
+    flex-wrap: wrap;
+    grid-gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); /* 400px */
   }
-}
 
-@media screen and (min-width: 63.188rem) { /* 1011px */
-  #footer section {
-    margin-left: auto;
-    margin-right: auto;
+  #contact-us article > h2 {
+    grid-column: 1 / -1;
+    width: 100%;
+  }
+
+  @supports (display: flex) {
+    #contact-us article > * {
+      margin-right: 2rem;
+      width: 25rem;
+    }
+
+    #contact-us article > h2 {
+      margin-right: 0;
+    }
+
+    #contact-us article h3 {
+      padding-top: 0;
+    }
+
+    #contact-us article section {
+      padding-bottom: 0;
+    }
   }
 }
