@@ -30,8 +30,8 @@ header,
 main {
   margin: 0 auto;
   /* Max-width is reached when screen size is 63.188em (1011px) */
-  max-width: 52.778em; /* for browsers that don't support rem units */
-  max-width: 59.375rem; /* 950px */
+  max-width: 111.111em; /* for browsers that don't support rem units */
+  max-width: 125rem; /* 950px */
   width: 94vw;
 }
 
