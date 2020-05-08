@@ -39,6 +39,7 @@ header {
   margin-top: 3vw;
 }
 
+article,
 section {
   padding-top: 1em; /* 16px */
   padding-bottom: 3.653em; /* 58px */
@@ -136,7 +137,6 @@ strong {
 
 
 /* Header CSS */
-
 #header {
   background-image: url("../media/img/chicago-iit-cru.png");
   background-position: bottom;
