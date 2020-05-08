@@ -6,9 +6,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /* Custom CSS Added Here: */
 
-
 /* General CSS */
-
 html {
   background-color: #00719C; /* A Calm Blue */
   line-height: 175%;
@@ -392,7 +390,6 @@ strong {
   a div element to make it responsive.
   This is the CSS to make it responsive.
 */
-
 .responsive-calendar {
   height: 43.3391828275em; /* 693px */
   max-width: 100%;
